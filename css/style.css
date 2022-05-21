@@ -13,9 +13,12 @@ a{
     text-decoration: none;
 }
 
+#logo{
+    font-size: 1.5vw;
+}
+
 header{
-    background-color: rgb(106, 98, 90);
-    color: rgb(221, 158, 70);
+    color: gray;
     position: sticky;
     top: 0;
     z-index: 9999;
@@ -25,13 +28,63 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 50px;
+    height: 3vw;
     align-items: center;
-    padding: 0px 25px;
+    padding: 0 3vw;
 }
 
 .nav-links{
     display: flex;
-    gap: 50px;
+    gap: 3vw;
     list-style: none;
+}
+
+.nav-links a{
+    color: gray;
+    font-size: 1.5vw;
+}
+
+.nav-links a:hover{
+    color: purple;
+}
+
+#introduction{
+    padding: 10vw 15vw;
+    text-align: left;
+}
+
+.d-flex{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-wrap: wrap;
+}
+
+.int-banner h1{
+    color: gray;
+    font-size: 2.75vw;
+}
+
+.int-banner h5{
+    color: grey;
+    font-size: 1.5vw;
+}
+
+.workGeneral {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid.gap: none;
+    grid-auto-rows: minmax (50%, auto);
+    justify-items: center;
+    align-items: center;
+}
+
+.img-grid{
+    max-width: 50%;
+    height: 50%;
+}
+
+.workGeneral img hover{
+    background-color: #f0e3db95;
 }
