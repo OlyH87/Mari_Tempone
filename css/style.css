@@ -14,7 +14,8 @@ a{
 }
 
 #logo{
-    font-size: 1.5vw;
+    font-size: 1.2em;
+    margin-right: 1em;
 }
 
 header{
@@ -28,14 +29,14 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 3vw;
+    height: 2em;
     align-items: center;
     padding: 0 3vw;
 }
 
 .nav-links{
     display: flex;
-    gap: 3vw;
+    gap: 3em;
     list-style: none;
 }
 
@@ -49,7 +50,7 @@ nav{
 }
 
 #introduction{
-    padding: 10vw 15vw;
+    padding: 12em 15em;
     text-align: left;
 }
 
@@ -62,29 +63,35 @@ nav{
 
 .int-banner h1{
     color: gray;
-    font-size: 2.75vw;
+    font-size: 2.4em;
 }
 
 .int-banner h5{
     color: grey;
-    font-size: 1.5vw;
+    font-size: 1.3em;
 }
 
-.workGeneral {
+.myWork img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.myWork{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
-    grid.gap: none;
-    grid-auto-rows: minmax (50%, auto);
-    justify-items: center;
-    align-items: center;
+    grid-template-columns: repeat(2,3fr);
+    grid-template-rows: 3;
 }
 
-.img-grid{
-    max-width: 50%;
-    height: 50%;
+.myWork:hover{
+    opacity: 0.6;
 }
+.myWork-item:hover{
+    transform: scale(1.2);
+    opacity: none;
+    cursor: pointer;
+} 
 
-.workGeneral img hover{
-    background-color: #f0e3db95;
+.myWork-item-title{
+    color: white;
 }
