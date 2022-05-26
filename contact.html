@@ -16,20 +16,65 @@
     <script src="https://kit.fontawesome.com/477ec0e3c0.js" crossorigin="anonymous"></script>
 </head>
 <body> 
-    <!-- Delete body content for other pager -->
     <header>
         <nav>
             <div id="logo">
                 <i class="fa-solid fa-wand-magic-sparkles"></i>
-                Mari Tempone
+                <a href="#introduction">Mari Tempone</a> 
             </div>
             <ul class="nav-links">
-                <li> <a href="#">Home</a> </li>
-                <li> <a href="#">Work</a> </li>
+                <li> <a href="index.html#introduction">Home</a> </li>
+                <li> <a href="index.html#myWork">Work</a> </li>
                 <li> <a href="./contact.html">Contact</a> </li>
             </ul>
         </nav>
     </header>
-    CONTACT
+    <main>
+        <section class="contact">
+            <h2>Have any questions?</h2>
+            <h3>Contact me!</h3>
+
+            <form action="" method="post" enctype="multipart/form-data" id="formularioContacto">
+                <label for="">First Name</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" size="20" maxlength="50">
+                <br>
+                <label for="">Last Name</label>
+                <input type="text" name="apellido" id="apellido" placeholder="Apellido" size="20" maxlength="50">
+                <br>
+                <label for="">Email</label>
+                <input type="email" name="email" id="email" placeholder="ej.: nombre@gmail.com" size="20" maxlength="50">
+                <br>
+                <label for="">Description</label>
+                <textarea name="consulta" id="consulta" placeholder= "Escriba aquí su consulta" cols="20" rows="10"></textarea>
+                <br><br>
+                <input type="submit" value="Enviar">
+            </form>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52563.43852820766!2d-58.45603493802436!3d-34.5734283494888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59c771eb933%3A0x6b3113b596d78c69!2sPalermo%2C%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1653516028903!5m2!1sen!2sar"
+                width="400"
+                height="400"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+    </main>
+    
+    <footer>
+        <div id="icons">
+            <a href="https://www.instagram.com/petit_lamb/?hl=en" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+            <a href="https://wa.me/5491121688626" target="_blank"><i class="fa-brands fa-whatsapp fa-2xl"></i></a>
+            <a href="https://www.linkedin.com/in/maria-silva-temponis-b1345490/?locale=en_US" target="_blank"> <i class="fa-brands fa-linkedin fa-2xl"></i></Inp></a>
+        </div>
+        <div id="footer-text">
+            <p>
+                Todos los derechos reservados <br>
+                Francis Herrera - 2022
+            </p>
+        </div>
+    </footer>
+
 </body>
 </html>
