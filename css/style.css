@@ -11,7 +11,15 @@ body{
 
 a{
     text-decoration: none;
+    color: grey;
 }
+
+a:hover{
+    color: purple;
+    font-weight: bold;
+}
+
+/* Header */
 
 #logo{
     font-size: 1.2em;
@@ -47,7 +55,11 @@ nav{
 
 .nav-links a:hover{
     color: purple;
+    font-weight: bold;
 }
+
+
+/* Banner */
 
 #introduction{
     padding: 12em 15em;
@@ -71,27 +83,109 @@ nav{
     font-size: 1.3em;
 }
 
+
+/* MyWork section */
+
 .myWork img{
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 100%;
 }
 
 .myWork{
     display: grid;
     grid-template-columns: repeat(2,3fr);
-    grid-template-rows: 3;
+    grid-template-rows: 4;
 }
 
-.myWork:hover{
-    opacity: 0.6;
-}
 .myWork-item:hover{
-    transform: scale(1.2);
-    opacity: none;
     cursor: pointer;
 } 
 
-.myWork-item-title{
-    color: white;
+.myWork-item{
+    position: relative;
 }
+
+.myWork-item-title p{
+    font-size: 3.5em;
+    font-weight: bold;
+}
+
+.myWork-item-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.myWork-item-title:hover{
+    opacity: 1;
+    color: white;
+    visibility: visible;
+    z-index: 999;
+}
+
+.myWork-item-title a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    margin-top: 0.5em;
+}
+
+.myWork-item-title a:hover{
+    color: purple;
+}
+
+#workTogether{
+    text-decoration: none;
+    color: grey;
+    font-size: 3em;
+    padding: 2em;
+    text-align: center;
+}
+
+#workTogether:hover{
+    color: purple;
+}
+
+/* Footer */
+
+footer{
+    height: 10em;
+    background-color:#e7e1dc;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+}
+
+#icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 40vw;
+}
+
+footer p{
+    background-color:#e7e1dc;
+    font-size: 0.9em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 0.1em;
+    text-align: center;
+    margin-top: 2em;
+    padding: 1em;
+}
+
+/* Contact page */
+
