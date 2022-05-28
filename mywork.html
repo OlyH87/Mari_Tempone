@@ -11,10 +11,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/glide.core.min.css">
+    <link rel="stylesheet" href="./css/glide.theme.min.css">
     <script src="https://kit.fontawesome.com/477ec0e3c0.js" crossorigin="anonymous"></script>
-    <script src="js/app.js"></script>
+   
 </head>
 <body> 
     <header>
@@ -31,54 +33,46 @@
         </nav>
     </header>
     <main>
-        <div class="myWork-carousel-contenedor">
-
-            <h1>Branding</h1>
-
-            <button aria-label="Previous" class="carousel-prev">
-                <i class="fa-solid fa-chevron-left"></i>
-            </button>
-
-            <div class="myWork-carousel-list" >
-
-                <div class="carousel-element">
-                    <img src="https://picsum.photos/id/1/400/300" alt="">
+        <div class="container">
+            <div class="glide">
+                <p>Branding</p>
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide"><img src="./img/b5.png" alt=""></li>
+                        <li class="glide__slide"><img src="./img/b6.png" alt=""></li>
+                        <li class="glide__slide"><img src="./img/b7.png" alt=""></li>
+                        <li class="glide__slide"><img src="./img/b8.png" alt=""></li>
+                        <li class="glide__slide"><img src="./img/b9.png" alt=""></li>
+                        <li class="glide__slide"><img src="./img/b10.png" alt=""></li>
+                        <li class="glide__slide"><img src="./img/b11.png" alt=""></li>
+                        <li class="glide__slide"><img src="./img/b12.png" alt=""></li>
+                        <li class="glide__slide"><img src="./img/b13.png" alt=""></li>
+                       
+                    </ul>
                 </div>
-                <div class="carousel-element">
-                    <img src="https://picsum.photos/id/2/400/300" alt="">
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
                 </div>
-                <div class="carousel-element">
-                    <img src="https://picsum.photos/id/3/400/300" alt="">
-                </div>
-                <div class="carousel-element">
-                    <img src="https://picsum.photos/id/4/400/300" alt="">
-                </div>
-                <div class="carousel-element">
-                    <img src="https://picsum.photos/id/5/400/300" alt="">
-                </div>
-                <div class="carousel-element">
-                    <img src="https://picsum.photos/id/6/400/300" alt="">
-                </div>
-                <div class="carousel-element">
-                    <img src="https://picsum.photos/id/7/400/300" alt="">
-                </div>
-                <div class="carousel-element">
-                    <img src="https://picsum.photos/id/8/400/300" alt="">
-                </div>
-                <div class="carousel-element">
-                    <img src="https://picsum.photos/id/9/400/300" alt="">
-                </div>
-                <div class="carousel-element">
-                    <img src="https://picsum.photos/id/10/400/300" alt="">
-                </div>                                                 
-                </div>
-
-            <button aria-label="Next" class="carousel-next">
-                <i class="fa-solid fa-chevron-right"></i>
-            </button>
-
+              </div>
         </div>
-        <div role="tablist" class="carousel-indicators"></div>
+        <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+        <script>
+            const config ={
+                type: 'carousel',
+                perView: 5,
+                focusAt: 'center',
+                breakpoints:{
+                    1200:{
+                        perView: 3
+                    }
+                    800:{
+                        perView: 2
+                    }
+                }
+            }
+            new Glide('.glide', config).mount()
+        </script>
             
         </div>              
     </main>
@@ -96,7 +90,6 @@
             </p>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
-    
+       
 </body>
 </html>
