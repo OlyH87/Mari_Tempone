@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marie Je_Suis</title>
+
+    <link rel="shortcut icon" href="./img/alien.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/glide.core.min.css">
+    <link rel="stylesheet" href="./css/glide.theme.min.css">
+
+    <script src="https://kit.fontawesome.com/477ec0e3c0.js" crossorigin="anonymous"></script>
+   
+</head>
+<body> 
+    <header>
+        <nav>
+            <div id="logo">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <a href="./index.html#introduction">Mari Tempone</a> 
+            </div>
+            <ul class="nav-links">
+                <li> <a href="index.html#introduction">Home</a> </li>
+                <li> <a href="index.html#myWork">Work</a> </li>
+                <li> <a href="./contact.html">Contact</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <p class="myWork-secciones">Social Media</p>
+        </div>
+        <div class="container">
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide"><img src="./img/sm1.jpg" alt=""></li>
+                        <li class="glide__slide"><img src="./img/sm2.jpg" alt=""></li>
+                        <li class="glide__slide"><img src="./img/sm3.jpg" alt=""></li>
+                        <li class="glide__slide"><img src="./img/sm4.jpg" alt=""></li>
+                        <li class="glide__slide"><img src="./img/sm5.jpg" alt=""></li>
+                        <li class="glide__slide"><img src="./img/sm6.jpg" alt=""></li>
+                        <li class="glide__slide"><img src="./img/sm7.jpg" alt=""></li>
+                        <li class="glide__slide"><img src="./img/sm8.jpg" alt=""></li>
+                        <li class="glide__slide"><img src="./img/sm9.jpg" alt=""></li>
+                        <li class="glide__slide"><img src="./img/sm10.jpg" alt=""></li>
+                        <li class="glide__slide"><img src="./img/sm11.gif" alt=""></li>
+                        <li class="glide__slide"><img src="./img/sm12.jpg" alt=""></li>
+                        
+                    </ul>
+                </div>
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+        <script>
+            const config = {
+                type: 'carousel',
+                perView: 3,
+                focusAt: 'center',
+            }
+            new Glide('.glide', config).mount();
+        </script>
+
+        
+    </main>
+    
+    <footer>
+        <div id="icons">
+            <a href="https://www.instagram.com/petit_lamb/?hl=en" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+            <a href="https://wa.me/5491121688626" target="_blank"><i class="fa-brands fa-whatsapp fa-2xl"></i></a>
+            <a href="https://www.linkedin.com/in/maria-silva-temponis-b1345490/?locale=en_US" target="_blank"> <i class="fa-brands fa-linkedin fa-2xl"></i></Inp></a>
+        </div>
+        <div id="footer-text">
+            <p>
+                All rights reserved <br>
+                Francis Herrera - 2022
+            </p>
+        </div>
+    </footer>
+       
+</body>
+</html>
