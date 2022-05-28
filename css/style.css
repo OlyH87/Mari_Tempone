@@ -261,14 +261,9 @@ textarea{
 
 .container{
     margin: 0;
-    padding: 0;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    max-height: 15vh;
-    
-}
-
-.glide__slide:hover{
-    transform: scale(1.3);
+    max-height: 15%;
 }
