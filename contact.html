@@ -14,12 +14,13 @@
 
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/477ec0e3c0.js" crossorigin="anonymous"></script>
+    <script src="./js/formulario.js"></script>
 </head>
 <body> 
     <header>
         <nav>
             <div id="logo">
-                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <a href="https://drive.google.com/drive/folders/1kCXpNpJAD8qXTdgSvnZTgs44HQkP03W0" target="_blank"><i class="fa-solid fa-wand-magic-sparkles"></i></a>
                 <a href="./index.html#introduction">Mari Tempone</a> 
             </div>
             <ul class="nav-links">
@@ -36,7 +37,7 @@
                 <p id="contact-me">Contact me!</p>
             </div>
             <div>
-                <form action="" method="post" enctype="multipart/form-data" id="formularioContacto">
+                <form action="" method="post" enctype="multipart/form-data" id="formularioContacto" onsubmit="return validar();">
                     <label for="" class="field"></label>
                     <input type="text" name="nombre" id="nombre" placeholder="First Name" size="25" maxlength="50">
                     <br>
@@ -50,6 +51,7 @@
                     <textarea name="consulta" id="mensaje" placeholder= "Write your message here" cols="25" rows="10"></textarea>
                     <br><br>
                     <input id= button type="submit" value="Send">
+                    <p class="warnings" id="warnings"></p>
                 </form>
             </div>          
             <div>
